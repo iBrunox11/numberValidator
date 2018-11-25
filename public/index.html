@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Number validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../resource/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="beauty.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../resource/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-primary" role="alert">
+                    Digite qualquer valor inteiro para que seja feito o cálculo de quantos 
+                    números pares existem até chegar no número informado.
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form">
+                            <input class="form-control" type="text" id="number" placeholder="Digite um número inteiro de 0 a 100."/>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                            <button type="button" class="btn btn-dark" id="btnValidator" onclick="searchValues()">Calcular</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                        <div class="col-md-12">
+                            <div class="printValues">
+                                <!--Content that receive the values of script.js-->
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#Lista de números</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="listValues">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
